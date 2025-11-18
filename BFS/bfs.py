@@ -10,7 +10,7 @@ def bfs(grafo):
       vizinhos = grafo[vertice]
 
     for vizinho in vizinhos:
-      if vizinho not in visitados:
+      if vizinho not in visitados and vizinho not in fila:
         fila.append(vizinho)
 
   return visitados
