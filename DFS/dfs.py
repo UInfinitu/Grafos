@@ -9,9 +9,9 @@ def dfs(grafo):
       visitados.append(vertice)
       vizinhos = grafo[vertice]
 
-    for vizinho in vizinhos:
-      if vizinho not in visitados and vizinho not in pilha:
-        pilha.append(vizinho)
+      for vizinho in vizinhos:
+        if vizinho not in visitados and vizinho not in pilha:
+          pilha.append(vizinho)
 
   return visitados
 
